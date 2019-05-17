@@ -1,0 +1,7 @@
+*~
+*.bak
+/.idea
+/instance
+/backup
+/keys
+/root-keys
