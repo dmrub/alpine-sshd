@@ -94,6 +94,7 @@ if [[ -n "${OPENSSH_USER}" ]]; then
     if [[ -n "${OPENSSH_AUTHORIZED_KEYS}" ]]; then
         info "Install authorized keys for $OPENSSH_USER user to $OPENSSH_HOME/.ssh/authorized_keys"
         mkdir -p "$OPENSSH_HOME/.ssh"
+        chmod 755 "$OPENSSH_HOME"
         chmod 700 "$OPENSSH_HOME/.ssh"
         touch "$OPENSSH_HOME/.ssh/authorized_keys"
         echo "${OPENSSH_AUTHORIZED_KEYS}" >> "$OPENSSH_HOME/.ssh/authorized_keys"
