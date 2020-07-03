@@ -18,7 +18,7 @@ ENV OPENSSH_VERSION=${OPENSSH_VERSION} \
     OPENSSH_HOME="/home/ssh" \
     OPENSSH_SHELL="/bin/bash" \
     OPENSSH_RUN="" \
-    OPENSSH_ALLOW_TCP_FORWARDING="remote"
+    OPENSSH_ALLOW_TCP_FORWARDING="all"
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 

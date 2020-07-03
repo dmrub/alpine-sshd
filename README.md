@@ -16,7 +16,7 @@ alpine-sshd is a docker container for running OpenSSH server. Also it includes r
  - **OPENSSH_SHELL** Shell of the login user. Defaults to /bin/bash.
  - **OPENSSH_HOME** The home directory of the login user. Defaults to /home/ssh.
  - **OPENSSH_RUN** Commands to run with '/bin/sh -c'. Defaults to empty string.
- - **OPENSSH_ALLOW_TCP_FORWARDING** Sets AllowTcpForwarding SSHD option for the login user. Defaults to remote.
+ - **OPENSSH_ALLOW_TCP_FORWARDING** Sets AllowTcpForwarding SSHD option for the login user. Defaults to all.
 
 ## References
 
